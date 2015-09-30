@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/FenrirUnbound/roller-dome/issues"
   },
-  "homepage": "https://github.com/FenrirUnbound/roller-dome"
+  "homepage": "https://github.com/FenrirUnbound/roller-dome",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  }
 }
