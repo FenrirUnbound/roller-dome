@@ -32,6 +32,7 @@ describe('deck', function () {
           'add',
           'draw',
           'scry',
+          'shuffle',
           'size'
         ];
 
@@ -129,6 +130,24 @@ describe('deck', function () {
         deck = new Deck();
         result = deck.draw();
         expect(result).to.be.not.ok;
+      });
+    });
+
+    describe('shuffle', function () {
+      it('shuffles the deck', function () {
+        var compare;
+        var result;
+        var secondComparison;
+        deck = new Deck([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+
+        result = deck.shuffle();
+        expect(result).to.be.true;
+        comparison = deck.scry(10);
+        expect(comparison).to.not.deep.equal([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+
+        deck.shuffle();
+        secondComparison = deck.scry(10);
+        expect(secondComparison).to.not.deep.equal(comparison);
       });
     });
   });
