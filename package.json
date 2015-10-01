@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "gulp": "./node_modules/.bin/gulp",
     "test": "mocha --recursive"
   },
   "repository": {
@@ -17,7 +18,11 @@
   },
   "homepage": "https://github.com/FenrirUnbound/roller-dome",
   "devDependencies": {
+    "browserify": "^11.2.0",
     "chai": "^3.3.0",
-    "mocha": "^2.3.3"
+    "gulp": "^3.9.0",
+    "mocha": "^2.3.3",
+    "react": "^0.13.3",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
