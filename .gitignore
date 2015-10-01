@@ -1,2 +1,5 @@
 node_modules/*
 .otto/*
+
+npm-debug.log
+views/scripts/*
