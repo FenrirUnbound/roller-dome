@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "gulp": "./node_modules/.bin/gulp",
     "test": "mocha --recursive"
   },
   "repository": {
