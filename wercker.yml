@@ -3,6 +3,9 @@ box: nodesource/trusty
 build:
   # The steps that will be executed on build
   steps:
+    # in testing during a build; this ensures npm test uses dev dependencies
+    - script:
+        code: export NODE_ENV='testing'
     # A step that executes `npm install` command
     - npm-install
     # A step that executes `npm test` command
